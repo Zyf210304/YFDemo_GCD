@@ -31,6 +31,7 @@
     
 //    [self GCDDelay];
 //    [self GCDGroup];
+    [self GCDSemaphore];
 }
 
 - (void)GCDDelay {
@@ -137,6 +138,18 @@
     //    NSLog(@"apple");
     dispatch_async(self.concurrentQueue, ^{
         NSLog(@"任务4");
+    });
+}
+
+-(void)GCDSemaphore{
+    //
+    //dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    dispatch_apply(5, self.concurrentQueue, ^(size_t i) {
+        //dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_async(self.concurrentQueue, ^{
+            NSLog(@"第%@次_%@",@(i),[NSThread currentThread]);
+            //dispatch_semaphore_signal(semaphore);
+        });
     });
 }
 

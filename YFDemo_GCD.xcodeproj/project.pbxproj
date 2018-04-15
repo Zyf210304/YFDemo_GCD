@@ -97,6 +97,7 @@
 		18188B28207F502700383714 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YF;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = yafei;
 				TargetAttributes = {
@@ -281,6 +282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K36LPBJ5XL;
 				INFOPLIST_FILE = YFDemo_GCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adpanshi.renzheng.YFDemo-GCD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K36LPBJ5XL;
 				INFOPLIST_FILE = YFDemo_GCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adpanshi.renzheng.YFDemo-GCD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
